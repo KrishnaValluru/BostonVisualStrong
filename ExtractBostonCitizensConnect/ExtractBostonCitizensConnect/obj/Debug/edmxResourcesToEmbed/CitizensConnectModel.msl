@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CitizensConnectModelStoreContainer" CdmEntityContainer="CitizensConnectEntities">
+    <EntitySetMapping Name="tblCitizensConnectDumps">
+      <EntityTypeMapping TypeName="CitizensConnectModel.tblCitizensConnectDump">
+        <MappingFragment StoreEntitySet="tblCitizensConnectDump">
+          <ScalarProperty Name="ReportText" ColumnName="ReportText" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="YCoordinates" ColumnName="YCoordinates" />
+          <ScalarProperty Name="XCoordinates" ColumnName="XCoordinates" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DateExtracted" ColumnName="DateExtracted" />
+          <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+          <ScalarProperty Name="OpenCount" ColumnName="OpenCount" />
+          <ScalarProperty Name="ClosedCount" ColumnName="ClosedCount" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="ServiceTotalCount" ColumnName="ServiceTotalCount" />
+          <ScalarProperty Name="ServiceOpenCount" ColumnName="ServiceOpenCount" />
+          <ScalarProperty Name="ServiceCloseCount" ColumnName="ServiceCloseCount" />
+          <ScalarProperty Name="ReportURL" ColumnName="ReportURL" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ReportAddress" ColumnName="ReportAddress" />
+          <ScalarProperty Name="ReportCoorXY" ColumnName="ReportCoorXY" />
+          <ScalarProperty Name="ReportCoorLatLon" ColumnName="ReportCoorLatLon" />
+          <ScalarProperty Name="OpenedTime" ColumnName="OpenedTime" />
+          <ScalarProperty Name="ClosedTime" ColumnName="ClosedTime" />
+          <ScalarProperty Name="ClosedMsg" ColumnName="ClosedMsg" />
+          <ScalarProperty Name="SubmittedTime" ColumnName="SubmittedTime" />
+          <ScalarProperty Name="SubmittedVia" ColumnName="SubmittedVia" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

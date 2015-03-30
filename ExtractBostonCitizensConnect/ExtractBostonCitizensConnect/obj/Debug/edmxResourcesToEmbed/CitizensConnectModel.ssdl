@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CitizensConnectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblCitizensConnectDump">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateExtracted" Type="date" Nullable="false" />
+    <Property Name="TotalCount" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="OpenCount" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ClosedCount" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ServiceName" Type="nvarchar" MaxLength="500" />
+    <Property Name="ServiceTotalCount" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ServiceOpenCount" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ServiceCloseCount" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ReportURL" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Status" Type="nvarchar" MaxLength="100" />
+    <Property Name="ReportText" Type="text" />
+    <Property Name="ReportAddress" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ReportCoorXY" Type="nvarchar" MaxLength="2000" />
+    <Property Name="XCoordinates" Type="nvarchar" MaxLength="500" />
+    <Property Name="YCoordinates" Type="nvarchar" MaxLength="500" />
+    <Property Name="ReportCoorLatLon" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="500" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="500" />
+    <Property Name="OpenedTime" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ClosedTime" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ClosedMsg" Type="nvarchar" MaxLength="2000" />
+    <Property Name="SubmittedTime" Type="nvarchar" MaxLength="2000" />
+    <Property Name="SubmittedVia" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+  <EntityContainer Name="CitizensConnectModelStoreContainer">
+    <EntitySet Name="tblCitizensConnectDump" EntityType="Self.tblCitizensConnectDump" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

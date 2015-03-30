@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CitizensConnectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblCitizensConnectDump">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateExtracted" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TotalCount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="OpenCount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ClosedCount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ServiceName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceTotalCount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ServiceOpenCount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ServiceCloseCount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ReportURL" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ReportAddress" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="ReportCoorXY" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="ReportCoorLatLon" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="OpenedTime" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="ClosedTime" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="ClosedMsg" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="SubmittedTime" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="SubmittedVia" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="Comments" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="XCoordinates" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="YCoordinates" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Latitude" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Longitude" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ReportText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="CitizensConnectEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblCitizensConnectDumps" EntityType="Self.tblCitizensConnectDump" />
+  </EntityContainer>
+</Schema>
